@@ -48,10 +48,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
-                        <y>59</y>
+                        <y>48.5</y>
                         <z>0</z>
                         <width>314</width>
-                        <height>62</height>
+                        <height>51</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -78,10 +78,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>180</x>
-                        <y>593</y>
+                        <y>609.5</y>
                         <z>0</z>
                         <width>314</width>
-                        <height>62</height>
+                        <height>47</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -99,7 +99,7 @@
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
-                        <line-height>2</line-height>
+                        <line-height>1</line-height>
                     </properties>
                     <instance-variables>
                         <tag>rules desc</tag>
@@ -108,10 +108,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>179</x>
-                        <y>334</y>
+                        <y>327.5</y>
                         <z>0</z>
-                        <width>314</width>
-                        <height>418</height>
+                        <width>322</width>
+                        <height>471</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
