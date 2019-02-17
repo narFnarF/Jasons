@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Jasons!</name>
+    <description></description>
+    <version>1</version>
+    <author>narF</author>
+    <author-email>narF@narF.ca</author-email>
+    <author-website>http://narF.ca</author-website>
+    <app-id>ca.narF.jasons</app-id>
+    <unique-id>3cxjxj85gpq5f</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Yann Granjon" id="JSON" version="1">JSON</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>360</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Start</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">Yes</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="plugins">
+            <object-type global="1" name="JSON" sid="570764969489220">
+                <plugin id="JSON" />
+            </object-type>
+            <object-type name="Touch" sid="970018002525149">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type name="AJAX" sid="448177824960100">
+                <plugin id="AJAX" />
+            </object-type>
+            <object-type name="Browser" sid="630841212576415">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Function" sid="915612056794265">
+                <plugin id="Function" />
+            </object-type>
+        </object-folder>
+        <object-type name="btnType" sid="818437387546634">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="intensité" sid="657149269789263" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="btnQuestionSuivante" sid="980419629413765">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtQuestion" sid="937892300977889">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btnRetour" sid="271933348621244">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtLabel" sid="220630583630752">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="tag" sid="704459508966047" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="txtTitreIntensité" sid="968745919971157">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="webfont" plugin-id="Text" sid="868198488291117">
+            <members>
+                <member>btnQuestionSuivante</member>
+                <member>btnRetour</member>
+                <member>btnType</member>
+                <member>txtLabel</member>
+                <member>txtQuestion</member>
+                <member>txtTitreIntensité</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Main.xml</layout>
+        <layout>Start.xml</layout>
+        <layout>Instructions.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>eMain.xml</event-sheet>
+        <event-sheet>eStart.xml</event-sheet>
+        <event-sheet>eInstructions.xml</event-sheet>
+        <event-sheet>webfonts.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="1">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="AJAX" uid="2" />
+        <global-instance type="Browser" uid="3" />
+        <global-instance type="Function" uid="4" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="questions.json" />
+    </files-folder>
+</c2project>

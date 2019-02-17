@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eMain</name>
+    <events>
+        <include>webfonts</include>
+        <event-group description="" sid="514555066603740" title="load JSON">
+            <sub-events>
+                <event-block sid="698789139230748">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="296382136618495" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Request project file" sid="954676849982885" type="AJAX">
+                            <param id="0" name="Tag">&quot;questions&quot;</param>
+                            <param id="1" name="File">questions.json</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="821029117738914">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="417365375353409" type="AJAX">
+                            <param id="0" name="Tag">&quot;questions&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="60" name="LoadJSON" sid="120116309226812" type="JSON">
+                            <param id="0" name="JSON">AJAX.LastData</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="661554263097912">
+                    <conditions>
+                        <condition id="4" name="On any error" sid="105385382976499" type="AJAX" />
+                    </conditions>
+                    <actions>
+                        <action id="14" name="Log" sid="529439146634644" type="Browser">
+                            <param id="0" name="Type">2</param>
+                            <param id="1" name="Message">&quot;Une erreur avec ajax&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="970474638341823" title="game flow">
+            <sub-events>
+                <variable constant="0" name="intensity" sid="216089076842033" static="0" type="number">0</variable>
+                <event-block sid="940948523706321">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="744456798714444" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="721519807531205" type="System">
+                            <param id="0" name="Layer">&quot;question&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="517747663868610">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="399075874378636" type="Touch">
+                            <param id="0" name="Object">btnRetour</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="382010121430241" type="System">
+                            <param id="0" name="Layer">&quot;choix type&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="460996022915349" type="System">
+                            <param id="0" name="Layout">Start</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="273622251279725">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="222192089638465" type="Touch">
+                            <param id="0" name="Object">btnQuestionSuivante</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="534217716312473" type="System">
+                            <param id="0" name="Layer">&quot;question&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="495200864914146" type="System">
+                            <param id="0" name="Layer">&quot;question&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="215120201653347" type="System">
+                            <param id="0" name="Layer">&quot;choix type&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="971915223323677">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="781458857329783" type="Touch">
+                            <param id="0" name="Object">btnType</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="951622825558826" type="System">
+                            <param id="0" name="Layer">&quot;choix type&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="450701475450091" type="System">
+                            <param id="0" name="Variable">intensity</param>
+                            <param id="1" name="Value">btnType.intensité</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="159286011927200" type="System">
+                            <param id="0" name="Layer">&quot;question&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="848315445982759" type="System">
+                            <param id="0" name="Layer">&quot;choix type&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="249088939635030" type="txtQuestion">
+                            <param id="0" name="Text">Function.Call(&quot;pop random question&quot;, intensity)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="615981015594121" title="global functions">
+            <sub-events>
+                <event-block sid="842772077513041">
+                    <conditions>
+                        <condition id="0" name="On function" sid="407863247553363" type="Function">
+                            <param id="0" name="Name">&quot;pop random question&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>returns a question (txt)</comment>
+                        <variable constant="0" name="intensity" sid="886211381743255" static="0" type="number">0</variable>
+                        <event-block sid="182065805775787">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="769258557495073" type="System">
+                                    <param id="0" name="Variable">intensity</param>
+                                    <param id="1" name="Value">Function.Param(0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <variable constant="0" name="randomNb" sid="873278673174073" static="0" type="number">0</variable>
+                        <event-block sid="983427082749039">
+                            <conditions />
+                            <actions>
+                                <action id="200" name="Set Current Path" sid="713545749436849" type="JSON">
+                                    <param id="0" name="Reference point">0</param>
+                                    <param id="1" name="Key {n}">intensity</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="650614363916500" type="System">
+                                    <param id="0" name="Variable">randomNb</param>
+                                    <param id="1" name="Value">floor(random(0, JSON.Size(1)))</param>
+                                </action>
+                                <action disabled="1" id="14" name="Log" sid="472374152453726" type="Browser">
+                                    <param id="0" name="Type">0</param>
+                                    <param id="1" name="Message">&quot;json array size: &quot; &amp; JSON.Size(1)</param>
+                                </action>
+                                <action id="1" name="Set return value" sid="126085687352432" type="Function">
+                                    <param id="0" name="Value">JSON.Value(1, randomNb)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="240780377437758" title="debug" />
+    </events>
+</c2eventsheet>

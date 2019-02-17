@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eInstructions</name>
+    <events>
+        <include>webfonts</include>
+        <event-block sid="829246697823647">
+            <conditions>
+                <condition id="14" name="On tap" sid="145946916546219" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="409775185267478" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="396546293229260">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="332529488780489" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="762783118996923" type="txtLabel">
+                    <param id="0" name="Instance variable">tag</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;rules desc&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="536502549521325" type="txtLabel">
+                    <param id="0" name="Text">&quot;* Ce jeu vise à favoriser les conversations intéressantes&#x0D;&#x0A;&#x0D;&#x0A;* À tour de rôle, choisissez une catégorie (intensité) de question.&#x0D;&#x0A;&#x0D;&#x0A;* Avant de répondre, chaque participant décide s&apos;il veut répondre à la question. Si non, on passe à la suivante.&#x0D;&#x0A;&#x0D;&#x0A;* Écoutez l&apos;autre. Ne jugez pas. Éviter d&apos;accaparer la conversation.&#x0D;&#x0A;&#x0D;&#x0A;* Arrêtez le jeu quand vous voulez.&#x0D;&#x0A;&#x0D;&#x0A;* Vous pouvez adapter les questions si nécessaire.&#x0D;&#x0A;&#x0D;&#x0A;* Amusez-vous!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
