@@ -2,7 +2,7 @@
 <c2project>
     <name>Jasons!</name>
     <description></description>
-    <version>1</version>
+    <version>2</version>
     <author>narF</author>
     <author-email>narF@narF.ca</author-email>
     <author-website>http://narF.ca</author-website>
@@ -88,6 +88,9 @@
         <object-type name="txtTitreIntensité" sid="968745919971157">
             <plugin id="Text" />
         </object-type>
+        <object-type name="txtVersion" sid="178553779809854">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="webfont" plugin-id="Text" sid="868198488291117">
@@ -98,6 +101,7 @@
                 <member>txtLabel</member>
                 <member>txtQuestion</member>
                 <member>txtTitreIntensité</member>
+                <member>txtVersion</member>
             </members>
         </family>
         <family name="translatable" plugin-id="Text" sid="353838322283682">

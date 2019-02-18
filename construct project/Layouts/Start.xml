@@ -33,7 +33,7 @@
                     <properties>
                         <text>.Jasons!</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Montserrat,-25,700,0</font>
+                        <font>Montserrat,-29,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -51,7 +51,7 @@
                         <y>247.5</y>
                         <z>0</z>
                         <width>314</width>
-                        <height>62</height>
+                        <height>202.49597168</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -112,6 +112,33 @@
                         <z>0</z>
                         <width>314</width>
                         <height>62</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txtVersion" uid="19">
+                    <properties>
+                        <text>v0</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Montserrat,-11,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Bottom</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>25.454589844</x>
+                        <y>628.834899902</y>
+                        <z>0</z>
+                        <width>46.231536865</width>
+                        <height>18.198852539</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
