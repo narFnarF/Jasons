@@ -89,6 +89,36 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="txtLabel" uid="17">
+                    <properties>
+                        <text>.credits: bla bla bla un jue de narF.ca</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Montserrat,-12,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <txtLabel>credits</txtLabel>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>180</x>
+                        <y>349.825561523</y>
+                        <z>0</z>
+                        <width>314</width>
+                        <height>62</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
