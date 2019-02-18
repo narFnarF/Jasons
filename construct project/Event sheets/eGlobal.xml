@@ -15,29 +15,100 @@
                 </action>
             </actions>
         </event-block>
-        <comment>text labels</comment>
-        <event-block sid="294259642736551">
-            <conditions>
-                <condition id="0" name="On function" sid="601720997686307" type="Function">
-                    <param id="0" name="Name">&quot;display text labels&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="454837038258193" type="translatable">
-                    <param id="0" name="Text">JSON.Value(0, &quot;txt label&quot;, translatable.txtLabel)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="361276805532300">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="508881265924353" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="923360080712164" type="Function">
-                    <param id="0" name="Name">&quot;display text labels&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="564878849814734" title="Fill text labels from JSON">
+            <sub-events>
+                <event-block sid="294259642736551">
+                    <conditions>
+                        <condition id="0" name="On function" sid="601720997686307" type="Function">
+                            <param id="0" name="Name">&quot;display text labels&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="14" name="Log" sid="416181710859356" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;function display text labels&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="595165919567935">
+                            <conditions>
+                                <condition id="60" inverted="1" name="Is undefined" sid="859750323212966" type="JSON">
+                                    <param id="0" name="Reference point">0</param>
+                                    <param id="1" name="Key {n}"></param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="454837038258193" type="translatable">
+                                    <param id="0" name="Text">JSON.Value(0, &quot;txt label&quot;, translatable.txtLabel)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="361276805532300">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="508881265924353" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="923360080712164" type="Function">
+                            <param id="0" name="Name">&quot;display text labels&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="226879637336998" title="load JSON">
+            <sub-events>
+                <event-block sid="453954385531384">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="681963299519102" type="System" />
+                        <condition id="60" name="Is undefined" sid="484998003478647" type="JSON">
+                            <param id="0" name="Reference point">0</param>
+                            <param id="1" name="Key {n}"></param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Request project file" sid="983964999164301" type="AJAX">
+                            <param id="0" name="Tag">&quot;questions&quot;</param>
+                            <param id="1" name="File">questions.json</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="813015135804442">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="136011302881694" type="AJAX">
+                            <param id="0" name="Tag">&quot;questions&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="60" name="LoadJSON" sid="499105877608124" type="JSON">
+                            <param id="0" name="JSON">AJAX.LastData</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="598218338468908" type="Function">
+                            <param id="0" name="Name">&quot;display text labels&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="14" name="Log" sid="244063858714100" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;json loaded&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="931523520598027">
+                    <conditions>
+                        <condition id="4" name="On any error" sid="825938604361819" type="AJAX" />
+                    </conditions>
+                    <actions>
+                        <action id="14" name="Log" sid="316396409153068" type="Browser">
+                            <param id="0" name="Type">2</param>
+                            <param id="1" name="Message">&quot;Une erreur avec ajax&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
