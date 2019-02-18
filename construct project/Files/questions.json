@@ -14,7 +14,7 @@
       "Si tu pouvais passer une journée avec une personne, qui choisirais-tu? (personne réelle, vivante ou morte)",
       "Si tu pouvais magiquement changer de vocation (job), qu'est-ce que tu aimerais faire?",
       "Si tu pouvais aller vivre 24 heures à n'importe quel moment dans le passé, quelle date choisirais-tu?",
-      "Qu'est-ce que que tu serais prêt à faire de complètement exagéré pour 100$? Pour 100 000$?",
+      "Qu'est-ce que que tu serais prêt à faire de complètement exagéré pour 100$? \nPour 100 000$?",
       "La meilleure maison du monde, selon toi, aurait l'air de quoi? Qu'est-ce qu'il y aurait à l'intérieur?",
       "Environ combien de selfies (autoportraits) penses-tu avoir dans tes photos?",
       "Qu'est-ce qui te fait rire?",
@@ -107,13 +107,13 @@
     "title": "Jasons!",
     "continue": "Touchez pour continuer",
     "rules title": "Règles",
-    "rules desc": "* Ce jeu vise à favoriser les conversations intéressantes\n\n* À tour de rôle, choisissez une catégorie (intensité) de question.\n\n* Avant de répondre, chaque participant décide s'il veut répondre à la question. Si non, on passe à la suivante.\n\n* Écoutez l'autre. Ne jugez pas. Éviter d'accaparer la conversation.\n\n* Arrêtez le jeu quand vous voulez.\n\n* Vous pouvez adapter les questions si nécessaire.\n\n* Amusez-vous!",
+    "rules desc": "○ Ce jeu vise à favoriser les conversations intéressantes\n\n○ À tour de rôle, choisissez une catégorie (intensité) de question.\n\n○ Avant de répondre, chaque participant décide s'il veut répondre à la question. Si non, on passe à la suivante.\n\n○ Écoutez l'autre. Ne jugez pas. Éviter d'accaparer la conversation.\n\n○ Arrêtez le jeu quand vous voulez.\n\n○ Vous pouvez adapter les questions si nécessaire.\n\n○ Amusez-vous!",
     "next question": "Question suivante",
     "intensity title": "Choisissez l'intensité de question",
     "intensity low": "Faciles et légères",
     "intensity med": "Intermédiaires",
     "intensity high": "Difficiles et personnelles",
     "return to title": "Retour à l'écran titre",
-	"credits": "Un jeu de narF\nwww.narF.ca"
+	"credits": "Un jeu de narF - www.narF.ca"
   }
 }
