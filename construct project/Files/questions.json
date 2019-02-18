@@ -36,7 +36,9 @@
     "Une tâche domestique ordinaire que tu aimes faire.",
     "Ton moyen de transport préféré.",
     "Est-ce mieux d'être un adulte ou d'être un enfant?",
-    "Quel mot choisirais tu pour décrire ta famille?"
+    "Quel mot choisirais tu pour décrire ta famille?",
+    "Qu'est-ce que tu aimes faire durant tes temps libres? Quel est ton hobby?",
+    "Quel est ton son ou bruit préféré?"
   ],
   "2": [
     "Un talent que tu aimerais avoir.",
@@ -72,7 +74,11 @@
     "Qu'est-ce que tu fais pour te calmer quand tu es stressé ou agité émotionnellement?",
     "Dans quelles circonstances aimes-tu danser?",
     "Qu'est-ce que tu fais pour redevenir de bonne humeur quand ça ne va pas?",
-    "As-tu déjà perdu une amitié volontairement ou involontairement?"
+    "As-tu déjà perdu une amitié volontairement ou involontairement?",
+    "Ton plus grand plaisir dans la vie.",
+    "La plus belle chose ou le plus beau geste que tu as fait pour quelqu'un d'autre.",
+    "Ton plus beau souvenir",
+    "Qu'est-ce que tu aimerais faire si tu avais plus de temps?"
   ],
   "3": [
     "Dans quelles situations es-tu gêné?",
