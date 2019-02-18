@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eGlobal</name>
+    <events>
+        <comment>set web font</comment>
+        <event-block sid="964951377027743">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="468003720889455" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="119359300520897" type="webfont">
+                    <param id="0" name="Family name">&quot;Montserrat&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Montserrat&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>text labels</comment>
+        <event-block sid="294259642736551">
+            <conditions>
+                <condition id="0" name="On function" sid="601720997686307" type="Function">
+                    <param id="0" name="Name">&quot;display text labels&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="454837038258193" type="translatable">
+                    <param id="0" name="Text">JSON.Value(0, &quot;txt label&quot;, translatable.txtLabel)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="361276805532300">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="508881265924353" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="923360080712164" type="Function">
+                    <param id="0" name="Name">&quot;display text labels&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

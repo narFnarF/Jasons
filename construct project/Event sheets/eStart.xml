@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eStart</name>
     <events>
-        <include>webfonts</include>
+        <include>eGlobal</include>
         <event-block sid="199097721785273">
             <conditions>
                 <condition id="14" name="On tap" sid="505884836064205" type="Touch" />
@@ -15,7 +15,7 @@
             </actions>
         </event-block>
         <comment>To prevent the text from blinking when going from the default font to the webfont.</comment>
-        <event-block sid="177404826160085">
+        <event-block disabled="1" sid="177404826160085">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="170340024204567" type="System" />
             </conditions>
@@ -33,5 +33,49 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="548840683869997" title="load JSON">
+            <sub-events>
+                <event-block sid="457626004594641">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="762032747372221" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Request project file" sid="744052813988073" type="AJAX">
+                            <param id="0" name="Tag">&quot;questions&quot;</param>
+                            <param id="1" name="File">questions.json</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="754521652137455">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="571833778470590" type="AJAX">
+                            <param id="0" name="Tag">&quot;questions&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="60" name="LoadJSON" sid="761903474845774" type="JSON">
+                            <param id="0" name="JSON">AJAX.LastData</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="816930260329165" type="Function">
+                            <param id="0" name="Name">&quot;display text labels&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="720054343026441">
+                    <conditions>
+                        <condition id="4" name="On any error" sid="986298077153290" type="AJAX" />
+                    </conditions>
+                    <actions>
+                        <action id="14" name="Log" sid="453995872282278" type="Browser">
+                            <param id="0" name="Type">2</param>
+                            <param id="1" name="Message">&quot;Une erreur avec ajax&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

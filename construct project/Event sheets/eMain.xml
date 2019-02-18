@@ -3,47 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eMain</name>
     <events>
-        <include>webfonts</include>
-        <event-group description="" sid="514555066603740" title="load JSON">
-            <sub-events>
-                <event-block sid="698789139230748">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="296382136618495" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="1" name="Request project file" sid="954676849982885" type="AJAX">
-                            <param id="0" name="Tag">&quot;questions&quot;</param>
-                            <param id="1" name="File">questions.json</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="821029117738914">
-                    <conditions>
-                        <condition id="0" name="On completed" sid="417365375353409" type="AJAX">
-                            <param id="0" name="Tag">&quot;questions&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="60" name="LoadJSON" sid="120116309226812" type="JSON">
-                            <param id="0" name="JSON">AJAX.LastData</param>
-                            <param id="1" name="Reference point">0</param>
-                            <param id="2" name="Key {n}"></param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="661554263097912">
-                    <conditions>
-                        <condition id="4" name="On any error" sid="105385382976499" type="AJAX" />
-                    </conditions>
-                    <actions>
-                        <action id="14" name="Log" sid="529439146634644" type="Browser">
-                            <param id="0" name="Type">2</param>
-                            <param id="1" name="Message">&quot;Une erreur avec ajax&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
+        <include>eGlobal</include>
         <event-group description="" sid="970474638341823" title="game flow">
             <sub-events>
                 <variable constant="0" name="intensity" sid="216089076842033" static="0" type="number">0</variable>
@@ -149,7 +109,7 @@
                             <actions>
                                 <action id="200" name="Set Current Path" sid="713545749436849" type="JSON">
                                     <param id="0" name="Reference point">0</param>
-                                    <param id="1" name="Key {n}">intensity</param>
+                                    <param id="1" name="Key {n}">&quot;questions&quot;{###}intensity</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="650614363916500" type="System">
                                     <param id="0" name="Variable">randomNb</param>

@@ -49,7 +49,7 @@
             <instances>
                 <instance type="btnQuestionSuivante" uid="10">
                     <properties>
-                        <text>Question suivante</text>
+                        <text>.Question suivante</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-19,700,0</font>
                         <color>0,0,0</color>
@@ -59,6 +59,9 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <txtLabel>next question</txtLabel>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -76,7 +79,7 @@
                 </instance>
                 <instance type="txtQuestion" uid="11">
                     <properties>
-                        <text>Qu&apos;est-ce que tu aime lp aslkd lfkajsd lfkj lsadkjf asdklfj ?</text>
+                        <text>Placeholder texte de question...Qu&apos;est-ce que tu aime lp aslkd lfkajsd lfkj lsadkjf asdklfj ?</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-23,400,0</font>
                         <color>0,0,0</color>
@@ -122,7 +125,7 @@
             <instances>
                 <instance type="btnType" uid="12">
                     <properties>
-                        <text>Faciles et légères</text>
+                        <text>.Faciles et légères</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-19,700,0</font>
                         <color>0,0,0</color>
@@ -133,6 +136,7 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
+                        <txtLabel>intensity low</txtLabel>
                         <intensité>1</intensité>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -152,7 +156,7 @@
                 </instance>
                 <instance type="btnType" uid="13">
                     <properties>
-                        <text>Intermédiaires</text>
+                        <text>.Intermédiaires</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-19,700,0</font>
                         <color>0,0,0</color>
@@ -163,6 +167,7 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
+                        <txtLabel>intensity med</txtLabel>
                         <intensité>2</intensité>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -182,7 +187,7 @@
                 </instance>
                 <instance type="btnType" uid="14">
                     <properties>
-                        <text>Difficiles et personnelles</text>
+                        <text>.Difficiles et personnelles</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-19,700,0</font>
                         <color>0,0,0</color>
@@ -193,6 +198,7 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
+                        <txtLabel>intensity high</txtLabel>
                         <intensité>3</intensité>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -212,7 +218,7 @@
                 </instance>
                 <instance type="btnRetour" uid="15">
                     <properties>
-                        <text>Retour à l&apos;écran titre</text>
+                        <text>.Retour à l&apos;écran titre</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16,700,0</font>
                         <color>0,0,0</color>
@@ -222,6 +228,9 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <txtLabel>return to title</txtLabel>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -239,7 +248,7 @@
                 </instance>
                 <instance type="txtTitreIntensité" uid="16">
                     <properties>
-                        <text>Choisissez l&apos;intensité de question</text>
+                        <text>.Choisissez l&apos;intensité de question</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Montserrat,-23,700,0</font>
                         <color>0,0,0</color>
@@ -249,6 +258,9 @@
                         <wrapping>Word</wrapping>
                         <line-height>5</line-height>
                     </properties>
+                    <instance-variables>
+                        <txtLabel>intensity title</txtLabel>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

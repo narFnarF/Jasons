@@ -80,9 +80,6 @@
         </object-type>
         <object-type name="txtLabel" sid="220630583630752">
             <plugin id="Text" />
-            <instance-variables>
-                <instance-variable name="tag" sid="704459508966047" type="string" />
-            </instance-variables>
         </object-type>
         <object-type name="txtTitreIntensité" sid="968745919971157">
             <plugin id="Text" />
@@ -99,6 +96,18 @@
                 <member>txtTitreIntensité</member>
             </members>
         </family>
+        <family name="translatable" plugin-id="Text" sid="353838322283682">
+            <members>
+                <member>btnQuestionSuivante</member>
+                <member>btnRetour</member>
+                <member>btnType</member>
+                <member>txtLabel</member>
+                <member>txtTitreIntensité</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="txtLabel" sid="116080900030907" type="string" />
+            </instance-variables>
+        </family>
     </families>
     <layout-folder>
         <layout>Main.xml</layout>
@@ -109,7 +118,7 @@
         <event-sheet>eMain.xml</event-sheet>
         <event-sheet>eStart.xml</event-sheet>
         <event-sheet>eInstructions.xml</event-sheet>
-        <event-sheet>webfonts.xml</event-sheet>
+        <event-sheet>eGlobal.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="1">
