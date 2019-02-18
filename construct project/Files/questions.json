@@ -95,7 +95,7 @@
       "Le moment dans ta vie où tu as été le plus triste.",
       "Un moment où tu t'es senti vulnérable.",
       "Quelque chose dans la vie que tu regrettes, mais que tu as appris à vivre avec ou sans.",
-      "Nommes 10 choses qui te font peur. Ça peut être dans le quoditient ou dans le fantastique.",
+      "Nommes 10 choses qui te font peur.",
       "À quoi tu penses avant de t'endormir?",
       "La fois que tu as été le plus malade de ta vie.",
       "Qu'est-ce qui te fait sentir aimer?",
@@ -114,6 +114,7 @@
     "intensity med": "Intermédiaires",
     "intensity high": "Difficiles et personnelles",
     "return to title": "Retour à l'écran titre",
-	"credits": "Un jeu de narF - www.narF.ca"
+	"credits": "Un jeu de narF - www.narF.ca",
+	"no more questions": "Il n'y a plus de questions dans cette catégorie. Choisissez une autre catégorie ou relancez le jeu pour remettre toutes les questions."
   }
 }

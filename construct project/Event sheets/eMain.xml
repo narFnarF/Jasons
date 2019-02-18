@@ -111,16 +111,83 @@
                                     <param id="0" name="Reference point">0</param>
                                     <param id="1" name="Key {n}">&quot;questions&quot;{###}intensity</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="650614363916500" type="System">
-                                    <param id="0" name="Variable">randomNb</param>
-                                    <param id="1" name="Value">floor(random(0, JSON.Size(1)))</param>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="403755261571651">
+                                    <conditions>
+                                        <condition id="70" inverted="1" name="Is Empty" sid="854516856142699" type="JSON">
+                                            <param id="0" name="Reference point">1</param>
+                                            <param id="1" name="Key {n}"></param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="650614363916500" type="System">
+                                            <param id="0" name="Variable">randomNb</param>
+                                            <param id="1" name="Value">floor(random(0, JSON.Size(1)))</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="472374152453726" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;json array size: &quot; &amp; JSON.Size(1)</param>
+                                        </action>
+                                        <action id="1" name="Set return value" sid="126085687352432" type="Function">
+                                            <param id="0" name="Value">JSON.Value(1, randomNb)</param>
+                                        </action>
+                                        <action id="50" name="Delete" sid="469114986017441" type="JSON">
+                                            <param id="0" name="Reference point">1</param>
+                                            <param id="1" name="Key {n}">randomNb</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="541133299007987">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="826490018484344" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="14" name="Log" sid="792757571305699" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;!!! empty!!   json array size: &quot; &amp; JSON.Size(1)</param>
+                                        </action>
+                                        <action id="1" name="Set return value" sid="440449325865431" type="Function">
+                                            <param id="0" name="Value">JSON.Value(0, &quot;txt label&quot;, &quot;no more questions&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="240780377437758" title="debug">
+            <sub-events>
+                <event-block sid="981210203412556">
+                    <conditions>
+                        <condition id="-18" name="Is in preview" sid="614740475147929" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="438217260768506">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="948306087969816" type="Keyboard">
+                                    <param id="0" name="Key">49</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="200" name="Set Current Path" sid="131777807340111" type="JSON">
+                                    <param id="0" name="Reference point">0</param>
+                                    <param id="1" name="Key {n}">&quot;questions&quot;</param>
                                 </action>
-                                <action disabled="1" id="14" name="Log" sid="472374152453726" type="Browser">
-                                    <param id="0" name="Type">0</param>
-                                    <param id="1" name="Message">&quot;json array size: &quot; &amp; JSON.Size(1)</param>
+                                <action id="55" name="Clear" sid="544551788247595" type="JSON">
+                                    <param id="0" name="Reference point">1</param>
+                                    <param id="1" name="Key {n}">&quot;1&quot;</param>
                                 </action>
-                                <action id="1" name="Set return value" sid="126085687352432" type="Function">
-                                    <param id="0" name="Value">JSON.Value(1, randomNb)</param>
+                                <action id="55" name="Clear" sid="769218351458800" type="JSON">
+                                    <param id="0" name="Reference point">1</param>
+                                    <param id="1" name="Key {n}">&quot;2&quot;</param>
+                                </action>
+                                <action id="55" name="Clear" sid="318009228459146" type="JSON">
+                                    <param id="0" name="Reference point">1</param>
+                                    <param id="1" name="Key {n}">&quot;3&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -128,6 +195,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="240780377437758" title="debug" />
     </events>
 </c2eventsheet>
