@@ -96,7 +96,7 @@
                         <font>Montserrat,-12,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -108,7 +108,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>180</x>
-                        <y>349.825561523</y>
+                        <y>39.825561523</y>
                         <z>0</z>
                         <width>314</width>
                         <height>62</height>
