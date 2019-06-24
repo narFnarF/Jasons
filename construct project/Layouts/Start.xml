@@ -15,7 +15,7 @@
     <layers>
         <layer name="Layer 0" sid="729192038945192">
             <initially-visible>1</initially-visible>
-            <background-color>96,84,75</background-color>
+            <background-color>239,239,239</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -34,7 +34,7 @@
                         <text>.Jasons!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Montserrat,-29,700,0</font>
-                        <color>239,239,239</color>
+                        <color>96,84,75</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
@@ -64,7 +64,7 @@
                         <text>.Touchez pour continuer</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Montserrat,-20,700,0</font>
-                        <color>239,239,239</color>
+                        <color>96,84,75</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
@@ -94,7 +94,7 @@
                         <text>.credits: bla bla bla un jue de narF.ca</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Montserrat,-12,400,0</font>
-                        <color>239,239,239</color>
+                        <color>96,84,75</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
@@ -124,7 +124,7 @@
                         <text>v0</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Montserrat,-11,400,0</font>
-                        <color>239,239,239</color>
+                        <color>96,84,75</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Bottom</vertical-alignment>
                         <hotspot>Center</hotspot>
