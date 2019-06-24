@@ -71,4 +71,4 @@ Temporary Items
 # ================
 
 #Add new ignored files below
-
+bin/
