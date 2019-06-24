@@ -80,8 +80,8 @@
       "La plus belle chose ou le plus beau geste que tu as fait pour quelqu'un d'autre.",
       "Ton plus beau souvenir",
       "Qu'est-ce que tu aimerais faire si tu avais plus de temps?",
-	  "Qu'est-ce qui éveille ta curiosité?",
-	  "Quelle est la recette du bonheur?"
+      "Qu'est-ce qui éveille ta curiosité?",
+      "Quelle est la recette du bonheur?"
     ],
     "3": [
       "Dans quelles situations es-tu gêné(e)?",
@@ -103,7 +103,7 @@
       "Qu'est-ce qui te fait sentir aimer?",
       "Raconte un moment de grand découragement dans ta vie.",
       "Y a-t-il une question existentielle que tu te poses souvent?",
-	  "Dans quelles situations ressens-tu le plus l'amour?"
+      "Dans quelles situations ressens-tu le plus l'amour?"
     ]
   },
   "txt label": {
@@ -117,7 +117,7 @@
     "intensity med": "Intermédiaires",
     "intensity high": "Difficiles et personnelles",
     "return to title": "Retour à l'écran titre",
-	"credits": "Un jeu de narF - www.narF.ca",
-	"no more questions": "Il n'y a plus de questions dans cette catégorie. Choisissez une autre catégorie ou relancez le jeu pour remettre toutes les questions."
+    "credits": "Un jeu de narF - www.narF.ca",
+    "no more questions": "Il n'y a plus de questions dans cette catégorie. Choisissez une autre catégorie ou relancez le jeu pour remettre toutes les questions."
   }
 }
