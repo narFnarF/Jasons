@@ -116,6 +116,17 @@
                 <instance-variable name="txtLabel" sid="116080900030907" type="string" />
             </instance-variables>
         </family>
+        <family name="colorable" plugin-id="Text" sid="475715935168942">
+            <members>
+                <member>btnQuestionSuivante</member>
+                <member>btnRetour</member>
+                <member>btnType</member>
+                <member>txtLabel</member>
+                <member>txtQuestion</member>
+                <member>txtTitreIntensité</member>
+                <member>txtVersion</member>
+            </members>
+        </family>
     </families>
     <layout-folder>
         <layout>Main.xml</layout>

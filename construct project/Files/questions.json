@@ -119,5 +119,19 @@
     "return to title": "Retour à l'écran titre",
     "credits": "Un jeu de narF - www.narF.ca",
     "no more questions": "Il n'y a plus de questions dans cette catégorie. Choisissez une autre catégorie ou relancez le jeu pour remettre toutes les questions."
+  },
+  "colors": {
+    "Start": {
+      "text": [96, 84, 75],
+      "background": [239, 239, 239]
+    },
+    "Instructions": {
+      "text": [96, 84, 75],
+      "background": [239, 239, 239]
+    },
+    "Main": {
+      "text": [96, 84, 75],
+      "background": [239, 239, 239]
+    }
   }
 }

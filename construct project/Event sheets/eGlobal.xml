@@ -87,13 +87,17 @@
                             <param id="1" name="Reference point">0</param>
                             <param id="2" name="Key {n}"></param>
                         </action>
+                        <action id="14" name="Log" sid="244063858714100" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;json loaded&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="598218338468908" type="Function">
                             <param id="0" name="Name">&quot;display text labels&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="14" name="Log" sid="244063858714100" type="Browser">
-                            <param id="0" name="Type">0</param>
-                            <param id="1" name="Message">&quot;json loaded&quot;</param>
+                        <action id="0" name="Call function" sid="765206031940989" type="Function">
+                            <param id="0" name="Name">&quot;set colors&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
@@ -105,6 +109,60 @@
                         <action id="14" name="Log" sid="316396409153068" type="Browser">
                             <param id="0" name="Type">2</param>
                             <param id="1" name="Message">&quot;Une erreur avec ajax&quot;</param>
+                        </action>
+                        <action id="14" name="Log" sid="660349432870288" type="Browser">
+                            <param id="0" name="Type">2</param>
+                            <param id="1" name="Message">AJAX.LastData</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="790577838959418" title="set colors">
+            <sub-events>
+                <event-block sid="661461931706179">
+                    <conditions>
+                        <condition id="0" name="On function" sid="242051544847608" type="Function">
+                            <param id="0" name="Name">&quot;set colors&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="474587340373042">
+                            <conditions>
+                                <condition id="60" inverted="1" name="Is undefined" sid="248876699137762" type="JSON">
+                                    <param id="0" name="Reference point">0</param>
+                                    <param id="1" name="Key {n}"></param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="200" name="Set Current Path" sid="595785435800583" type="JSON">
+                                    <param id="0" name="Reference point">0</param>
+                                    <param id="1" name="Key {n}">&quot;colors&quot;{###}LayoutName{###}&quot;background&quot;</param>
+                                </action>
+                                <action id="-34" name="Set layer background color" sid="792642739065935" type="System">
+                                    <param id="0" name="Layer">0</param>
+                                    <param id="1" name="Color">rgb(JSON.Value(1,&quot;0&quot;), JSON.Value(1,1), JSON.Value(1,2))</param>
+                                </action>
+                                <action id="200" name="Set Current Path" sid="789520712646003" type="JSON">
+                                    <param id="0" name="Reference point">0</param>
+                                    <param id="1" name="Key {n}">&quot;colors&quot;{###}LayoutName{###}&quot;text&quot;</param>
+                                </action>
+                                <action id="4" name="Set font color" sid="885551165404418" type="colorable">
+                                    <param id="0" name="Color">rgb(JSON.Value(1,&quot;0&quot;), JSON.Value(1,1), JSON.Value(1,2))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="420963767031987">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="140063065515646" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="847097825872510" type="Function">
+                            <param id="0" name="Name">&quot;set colors&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
