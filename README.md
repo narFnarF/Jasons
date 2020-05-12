@@ -1,5 +1,13 @@
 # Jasons
-Un jeu de conversations fait en Construct 2 durant le Global Game Jam 2019.
+Un jeu pour vous aider à avoir des conversations. À essayer avec votre frère, votre mère, votre voisin, votre conjoint, etc.
+
+Fait initialement en Construct durant le Global Game Jam 2019.
+
+
+
+### Jouer online:
+https://narf.itch.io/jasons
+
 
 
 
@@ -7,12 +15,6 @@ Un jeu de conversations fait en Construct 2 durant le Global Game Jam 2019.
 * Web
 * Mobile (dans web browser)
 * Windows, Mac Linux
-
-
-
-### Jouer online:
-https://narf.itch.io/jasons
-
 
 
 
