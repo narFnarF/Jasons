@@ -1,3 +1,6 @@
+# Note
+Le projet a migré sur Codeberg ici: https://codeberg.org/narF/Jasons
+
 # Jasons
 Un jeu pour vous aider à avoir des conversations. À essayer avec votre frère, votre mère, votre voisin, votre conjoint, etc.
 
